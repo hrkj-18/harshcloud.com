@@ -6,14 +6,15 @@ copyright: "© Harsh Cloud"
 site_author: "Harsh Jain"
 site_description: "Harsh Cloud"
 
-
 theme:
   name: material
+  custom_dir: material
   language: "en"
   icon:
     logo: material/library
     repo: fontawesome/brands/git-alt
   features:
+  - content.tabs.link
   - navigation.instant
   - navigation.tracking
   - navigation.tabs
@@ -21,6 +22,25 @@ theme:
   - search.suggest
   - search.highlight
   - search.share
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 
 # Repo Details
 repo_url: "https://github.com/hrkj-18/harshcloud.com"
@@ -58,3 +78,14 @@ extra:
 #  analytics:
 #   provider: google
 #   property: UA-XXXXXXXX-X
+
+# Page tree
+nav:
+  - Home: index.md
+  - AWS:
+    - Index: aws/index.md
+  - AZ-900:
+    - Cloud Computing: az-900/cloud-computing.md
+    - Azure Core Services: az-900/azure-core-services.md
+    - Security, Privacy, Compliance and Trust: az-900/security-privacy-complaince-trust.md
+    - Cost Management and SLA: az-900/cost-management-and-sla.md
