@@ -1,0 +1,1613 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Harsh Cloud">
+      
+      
+      
+        <meta name="author" content="Harsh Jain">
+      
+      
+        <link rel="canonical" href="https://harshcloud.com/az-900/security-privacy-complaince-trust/">
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>Security, Privacy, Compliance and Trust - Harsh Cloud</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#network-security-groups" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Harsh Cloud" class="md-header__button md-logo" aria-label="Harsh Cloud" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Harsh Cloud
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Security, Privacy, Compliance and Trust
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/hrkj-18/harshcloud.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hrkj-18/harshcloud.com
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../aws/" class="md-tabs__link">
+        AWS
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cloud-computing/" class="md-tabs__link md-tabs__link--active">
+        AZ-900
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Harsh Cloud" class="md-nav__button md-logo" aria-label="Harsh Cloud" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Harsh Cloud
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/hrkj-18/harshcloud.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hrkj-18/harshcloud.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        AWS
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="AWS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          AWS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aws/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        AZ-900
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="AZ-900" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          AZ-900
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloud-computing/" class="md-nav__link">
+        Cloud Computing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure-core-services/" class="md-nav__link">
+        Azure Core Services
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Security, Privacy, Compliance and Trust
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Security, Privacy, Compliance and Trust
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#network-security-groups" class="md-nav__link">
+    Network Security Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-security-groups" class="md-nav__link">
+    Application Security Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routing" class="md-nav__link">
+    Routing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-defined-routes" class="md-nav__link">
+    User-defined Routes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall" class="md-nav__link">
+    Firewall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-firewall" class="md-nav__link">
+    Azure Firewall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dos-denial-of-service" class="md-nav__link">
+    DoS - Denial of Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ddos-distributed-denial-of-service" class="md-nav__link">
+    DDoS - Distributed Denial of Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-ddos-protection" class="md-nav__link">
+    Azure DDoS Protection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity" class="md-nav__link">
+    Identity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    Authorization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-management" class="md-nav__link">
+    Access Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-active-directory" class="md-nav__link">
+    Azure Active Directory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-factor-authentication-mfa" class="md-nav__link">
+    Multi-factor Authentication (MFA)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity_1" class="md-nav__link">
+    Identity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-key-vault" class="md-nav__link">
+    Azure Key Vault
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    Roles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-principle" class="md-nav__link">
+    Security Principle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    Scope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-assignment" class="md-nav__link">
+    Role Assignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-role-based-access-control-rbac" class="md-nav__link">
+    Azure Role-based Access Control (RBAC)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-resource-lock" class="md-nav__link">
+    Azure Resource Lock
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-resource-tags" class="md-nav__link">
+    Azure Resource Tags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-policy" class="md-nav__link">
+    Azure Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-blueprints" class="md-nav__link">
+    Azure Blueprints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-adoption" class="md-nav__link">
+    Cloud adoption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-adoption-framework" class="md-nav__link">
+    Cloud Adoption Framework
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategy" class="md-nav__link">
+    Strategy
+  </a>
+  
+    <nav class="md-nav" aria-label="Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understand-your-motivation" class="md-nav__link">
+    Understand your motivation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-outcome" class="md-nav__link">
+    Business Outcome
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-justification" class="md-nav__link">
+    Business Justification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-project" class="md-nav__link">
+    First Project
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan" class="md-nav__link">
+    Plan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ready" class="md-nav__link">
+    Ready
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adopt" class="md-nav__link">
+    Adopt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrate" class="md-nav__link">
+    Migrate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#innovate" class="md-nav__link">
+    Innovate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#govern-manage" class="md-nav__link">
+    Govern &amp; Manage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organize" class="md-nav__link">
+    Organize
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-sovereign-regions" class="md-nav__link">
+    Azure Sovereign Regions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cost-management-and-sla/" class="md-nav__link">
+        Cost Management and SLA
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#network-security-groups" class="md-nav__link">
+    Network Security Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-security-groups" class="md-nav__link">
+    Application Security Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routing" class="md-nav__link">
+    Routing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-defined-routes" class="md-nav__link">
+    User-defined Routes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall" class="md-nav__link">
+    Firewall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-firewall" class="md-nav__link">
+    Azure Firewall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dos-denial-of-service" class="md-nav__link">
+    DoS - Denial of Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ddos-distributed-denial-of-service" class="md-nav__link">
+    DDoS - Distributed Denial of Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-ddos-protection" class="md-nav__link">
+    Azure DDoS Protection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity" class="md-nav__link">
+    Identity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    Authorization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-management" class="md-nav__link">
+    Access Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-active-directory" class="md-nav__link">
+    Azure Active Directory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-factor-authentication-mfa" class="md-nav__link">
+    Multi-factor Authentication (MFA)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity_1" class="md-nav__link">
+    Identity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-key-vault" class="md-nav__link">
+    Azure Key Vault
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    Roles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-principle" class="md-nav__link">
+    Security Principle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    Scope
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-assignment" class="md-nav__link">
+    Role Assignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-role-based-access-control-rbac" class="md-nav__link">
+    Azure Role-based Access Control (RBAC)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-resource-lock" class="md-nav__link">
+    Azure Resource Lock
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-resource-tags" class="md-nav__link">
+    Azure Resource Tags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-policy" class="md-nav__link">
+    Azure Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-blueprints" class="md-nav__link">
+    Azure Blueprints
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-adoption" class="md-nav__link">
+    Cloud adoption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-adoption-framework" class="md-nav__link">
+    Cloud Adoption Framework
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strategy" class="md-nav__link">
+    Strategy
+  </a>
+  
+    <nav class="md-nav" aria-label="Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understand-your-motivation" class="md-nav__link">
+    Understand your motivation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-outcome" class="md-nav__link">
+    Business Outcome
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-justification" class="md-nav__link">
+    Business Justification
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-project" class="md-nav__link">
+    First Project
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plan" class="md-nav__link">
+    Plan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ready" class="md-nav__link">
+    Ready
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adopt" class="md-nav__link">
+    Adopt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrate" class="md-nav__link">
+    Migrate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#innovate" class="md-nav__link">
+    Innovate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#govern-manage" class="md-nav__link">
+    Govern &amp; Manage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organize" class="md-nav__link">
+    Organize
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-sovereign-regions" class="md-nav__link">
+    Azure Sovereign Regions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Security, Privacy, Compliance and Trust</h1>
+                
+                <h2 id="network-security-groups">Network Security Groups</h2>
+<ul>
+<li>Designed to <strong>filter traffic</strong> to (inbound) and from (outbound) Azure resources located in - Azure Virtual Network</li>
+<li>Filtering controlled by <strong>rules</strong></li>
+<li>Ability to have <strong>multiple</strong> inbound and outbound <strong>rules</strong></li>
+<li>Rules are created by specifying<ul>
+<li><strong>Source</strong>/<strong>Destination</strong> (IP addresses, service tags, application security groups)</li>
+<li><strong>Protocol</strong> (TCP, UDP, any)</li>
+<li><strong>Port</strong> (or Port Ranges, ex. 3389 – RDP, 22 – SSH, 80 HTTP, 443 HTTPS)</li>
+<li><strong>Direction</strong> (inbound or outbound)</li>
+<li><strong>Priority</strong> (order of evaluation)</li>
+</ul>
+</li>
+</ul>
+<h2 id="application-security-groups">Application Security Groups</h2>
+<ul>
+<li>A feature that allows <strong>grouping of virtual machines</strong> located in Azure virtual network</li>
+<li>Designed to <strong>reduce</strong> the <strong>maintenance effort</strong> (assign ASG instead of the explicit IP address)</li>
+</ul>
+<h2 id="routing">Routing</h2>
+<p>Process of finding/selecting a path for traffic in one or across multiple networks.</p>
+<h2 id="user-defined-routes">User-defined Routes</h2>
+<ul>
+<li>Custom (user-defined, static) routes (UDRs)</li>
+<li>Designed to override Azure’s default routing or add new routes</li>
+<li>Managed via Azure Route Table resource</li>
+<li>Associated with a zero or more Virtual Network subnets</li>
+</ul>
+<h2 id="firewall">Firewall</h2>
+<p>A firewall is a network security service that monitors and controls incoming and outgoing traffic.</p>
+<h2 id="azure-firewall">Azure Firewall</h2>
+<ul>
+<li>Managed, cloud-based <strong>firewall service</strong> (PaaS, Firewall as a Service)</li>
+<li>Built-in <strong>high availability</strong></li>
+<li>Highly <strong>Scalable</strong></li>
+<li><strong>Inbound</strong> &amp; <strong>outbound</strong> traffic filtering rules</li>
+<li>Support for <strong>FQDN</strong> (Fully Qualified Domain Name), ex. microsoft.com</li>
+<li>Fully integrated with Azure Monitor for logging and analytics</li>
+</ul>
+<h2 id="dos-denial-of-service">DoS - Denial of Service</h2>
+<p>Cyber-attack with intent to cause temporary or indefinite <strong>disruption of service</strong></p>
+<h2 id="ddos-distributed-denial-of-service">DDoS - Distributed Denial of Service</h2>
+<p><strong>DoS</strong> attack is an attack that is originating <strong>from multiple servers</strong></p>
+<h2 id="azure-ddos-protection">Azure DDoS Protection</h2>
+<ul>
+<li><strong>DDoS protection service</strong> in Azure</li>
+<li>Designed to<ul>
+<li><strong>Detect malicious traffic</strong> <strong>and block it</strong> while allowing legitimate users to connect</li>
+<li><strong>Prevent additional costs</strong> for auto-scaling environments</li>
+</ul>
+</li>
+<li>Two tiers<ul>
+<li><strong>Basic</strong> – automatically enabled for Azure platform</li>
+<li><strong>Standard</strong> – additional mitigation &amp; monitoring capabilities for Azure Virtual Network resources</li>
+</ul>
+</li>
+<li>The standard tier uses machine learning to <strong>analyze traffic patterns</strong> for better accuracy</li>
+</ul>
+<h2 id="identity">Identity</h2>
+<ul>
+<li>A user with a username and password.</li>
+<li>Also applications or other servers with secret keys or certificates.</li>
+<li>The fact of being something or someone.</li>
+</ul>
+<h2 id="authentication">Authentication</h2>
+<p>The process of <strong>verification/assertion of identity</strong></p>
+<h2 id="authorization">Authorization</h2>
+<p>The process of <strong>ensuring</strong> that only <strong>authenticated identities</strong> get <strong>access to the resources</strong> for which they have been granted access.</p>
+<h2 id="access-management">Access Management</h2>
+<p>The process of <strong>controlling</strong>, <strong>verifying</strong>, <strong>tracking,</strong> and <strong>managing access</strong> to authorized users and applications.</p>
+<h2 id="azure-active-directory">Azure Active Directory</h2>
+<ul>
+<li>Identity and Access Management service in Azure</li>
+<li>Identities management – users, groups, applications</li>
+<li>Access management – subscriptions, resource groups, roles, role assignments, authentication &amp; authorization settings, etc.</li>
+<li>Used by multiple Microsoft cloud platforms<ul>
+<li>Azure</li>
+<li>Microsoft 365</li>
+<li>Office 365</li>
+<li>Live.com services (Skype, OneDrive, etc.)</li>
+</ul>
+</li>
+</ul>
+<h2 id="multi-factor-authentication-mfa">Multi-factor Authentication (MFA)</h2>
+<ul>
+<li>Process of authentication using more than one factor (evidence) to prove identity</li>
+<li>Factor types<ul>
+<li>Knowledge Factor – “Something you know”, ex. password, pin</li>
+<li>Possession Factor – “Something you have”, ex. phone, token, card, key</li>
+<li>Physical Characteristic Factor – “Something you are”, ex. fingerprint, voice, face, eye iris</li>
+<li>Location Factor – “Somewhere you are”, ex. GPS location</li>
+</ul>
+</li>
+<li>Supported by Azure AD by default (simple on-off switch)</li>
+</ul>
+<h2 id="identity_1">Identity</h2>
+<ul>
+<li><strong>Centralized</strong>/<strong>unified</strong> infrastructure and platform <strong>security management service</strong></li>
+<li><strong>Natively embedded</strong> in Azure services</li>
+<li><strong>Integrated</strong> with <strong>Azure Advisor</strong></li>
+<li>Two tiers<ul>
+<li><strong>Free</strong> (Azure Defender OFF) – included in all Azure services, provides continuous assessments, security scores, and actionable security recommendations</li>
+<li><strong>Paid</strong> (Azure Defender ON) – hybrid security, threat protection alerts, vulnerability scanning, just in time (JIT) VM access, etc.</li>
+</ul>
+</li>
+</ul>
+<h2 id="azure-key-vault">Azure Key Vault</h2>
+<ul>
+<li><strong>Managed service</strong> for <strong>securing sensitive information</strong> (application/platform) (PaaS)</li>
+<li><strong>Secure storage service</strong> for<ul>
+<li><strong>Keys</strong>,</li>
+<li><strong>Secrets</strong> and</li>
+<li><strong>Certificates</strong></li>
+</ul>
+</li>
+<li><strong>Highly integrated</strong> with other Azure services (VMs, Logic Apps, Data Factory, Web Apps, etc.)</li>
+<li><strong>Centralization</strong></li>
+<li>Access <strong>monitoring</strong> and <strong>logging</strong></li>
+</ul>
+<h2 id="roles">Roles</h2>
+<p><strong>Role</strong> (role definition) is a <strong>collection of actions</strong> that <strong>the assigned identity</strong> will be able to perform.</p>
+<p>Role definition is an answer to the question “<strong>What</strong> can be done?”</p>
+<h2 id="security-principle">Security Principle</h2>
+<p><strong>Security Principle</strong> is an Azure object (identity) that can be assigned to a role (ex. users, groups or applications).</p>
+<p><strong>Security Principle assignment</strong> is an answer to the question “<strong>Who</strong> can do it?”</p>
+<h2 id="scope">Scope</h2>
+<p><strong>Scope</strong> is one or more Azure resources that the access applies to.</p>
+<p><strong>Scope assignment</strong> is an answer to the question “<strong>Where</strong> can it be done?”</p>
+<h2 id="role-assignment">Role Assignment</h2>
+<p><strong>Role assignment</strong> is a combination of <strong>role definition</strong>, <strong>security principle,</strong> and <strong>scope</strong>.</p>
+<h2 id="azure-role-based-access-control-rbac">Azure Role-based Access Control (RBAC)</h2>
+<ul>
+<li>Authorization system built on Azure Resource Manager (ARM)</li>
+<li>Designed for fine-grained access management of Azure Resources</li>
+<li>Role assignment is a combination of<ul>
+<li>Role definition – list of permissions like create VM, delete SQL, assign permissions, etc.</li>
+<li>Security Principal – user, group, service principal and managed identity and</li>
+<li>Scope – resource, resource groups, subscription, management group</li>
+</ul>
+</li>
+<li>Hierarchical<ul>
+<li>Management Groups &gt; Subscriptions &gt; Resource Groups &gt; Resources</li>
+</ul>
+</li>
+<li>Built-in and Custom roles are supported</li>
+</ul>
+<h2 id="azure-resource-lock">Azure Resource Lock</h2>
+<ul>
+<li>Designed to <strong>prevent accidental deletion</strong> and/or <strong>modification</strong></li>
+<li>Used in conjunction with RBAC</li>
+<li>Two types of locks<ul>
+<li><strong>Read-only</strong> (<strong>ReadOnly</strong>) – only read actions are allowed</li>
+<li><strong>Delete</strong> (<strong>CanNotDelete</strong>) – all actions except delete are allowed</li>
+</ul>
+</li>
+<li>Scopes are <strong>hierarchical</strong> (<strong>inherited</strong>)<ul>
+<li>Subscriptions &gt; Resource Groups &gt; Resources</li>
+</ul>
+</li>
+<li><strong>Management Groups</strong> can’t be locked</li>
+<li>Only <strong>Owner</strong> and <strong>User Access Administrator</strong> roles can manage locks (<strong>built-in</strong> roles)</li>
+</ul>
+<h2 id="azure-resource-tags">Azure Resource Tags</h2>
+<ul>
+<li>Tags are simple <strong>Name</strong> (key) - <strong>Value</strong> <strong>pairs</strong></li>
+<li>Designed to help with the <strong>organization of Azure resources</strong></li>
+<li>Used for resource <strong>governance</strong>, <strong>security</strong>, <strong>operations management</strong>, <strong>cost management</strong>, <strong>automation</strong>, etc.</li>
+<li>Typical <strong>tagging strategies</strong><ul>
+<li><strong>Functional</strong> – mark by <strong>function</strong> ( ex: environment = production )</li>
+<li><strong>Classification</strong> – mark by <strong>policies used</strong> ( ex: classification = restricted )</li>
+<li><strong>Finance</strong>/<strong>Accounting</strong> – mark for <strong>billing purposes</strong> ( ex: department = finance )</li>
+<li><strong>Partnership</strong> – mark by <strong>an association of users/groups</strong> ( ex: owner = adam )</li>
+</ul>
+</li>
+<li>Applicable for <strong>resources</strong>, <strong>resource groups,</strong> and <strong>subscriptions</strong></li>
+<li><strong>NOT inherited</strong> by default</li>
+</ul>
+<h2 id="azure-policy">Azure Policy</h2>
+<ul>
+<li>Designed to help with resource <strong>governance</strong>, <strong>security</strong>, <strong>compliance</strong>, <strong>cost management</strong>, etc.</li>
+<li><strong>Policies</strong> focus on <strong>resource properties</strong> (<strong>RBAC</strong> focused on <strong>user actions</strong>)</li>
+<li>Policy <strong>definition</strong> – Defines what should happen<ul>
+<li>Define the <strong>condition</strong> (if/else) and the <strong>effect</strong> (deny, audit, append, modify, etc.)</li>
+<li>Examples include allowed <em>resource types</em>, <em>allowed locations</em>, <em>allowed SKUs</em>, <em>inherit resource tags</em></li>
+</ul>
+</li>
+<li><strong>Built-in</strong> and <strong>custom</strong> policies are supported</li>
+<li>Policy <strong>initiative</strong> – a <strong>group</strong> of policy definitions</li>
+<li>Policy <strong>assignment</strong> – assignment of a policy definition/initiative to a scope<ul>
+<li>Scopes can be assigned to<ul>
+<li>management groups,</li>
+<li>subscriptions,</li>
+<li>resource groups, and</li>
+<li>resources</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Policies allow for <strong>exclusions of scopes</strong></li>
+<li>Checked during <strong>resource creation</strong> or <strong>updates</strong> and <strong>existing ones with remediation tasks</strong></li>
+</ul>
+<h2 id="azure-blueprints">Azure Blueprints</h2>
+<ul>
+<li><strong>Package</strong> of various Azure components (<strong>artifacts</strong>)<ul>
+<li><strong>Resource Groups</strong></li>
+<li><strong>ARM Templates</strong></li>
+<li><strong>Policy Assignments</strong></li>
+<li><strong>Role Assignments</strong></li>
+</ul>
+</li>
+<li><strong>Centralized storage</strong> for organizationally <strong>approved design patterns</strong></li>
+<li>Blueprint <strong>definition</strong> – describing what should happen (reusable package)</li>
+<li>Blueprint <strong>assignment</strong> – describing where it should happen (package deployment)</li>
+</ul>
+<h2 id="cloud-adoption">Cloud adoption</h2>
+<p><strong>Cloud adoption</strong> is a strategic move by an organization to leverage the cloud in their business</p>
+<h2 id="cloud-adoption-framework">Cloud Adoption Framework</h2>
+<p>Cloud Adoption Framework for Azure is a set of</p>
+<ul>
+<li><strong>tools</strong>,</li>
+<li><strong>best practices</strong>,</li>
+<li><strong>guidelines</strong> and</li>
+<li><strong>documentation</strong></li>
+</ul>
+<p>prepared by Microsoft to help companies with their cloud adoption journey.</p>
+<h2 id="strategy">Strategy</h2>
+<h3 id="understand-your-motivation">Understand your motivation</h3>
+<ul>
+<li>Answer the question <strong>WHY MOVE?</strong></li>
+<li>Common Motivation Triggers include<ul>
+<li><strong>Migration</strong><ul>
+<li>Cost Savings on infrastructure</li>
+<li>Reduction in complexity</li>
+<li>Operation optimization</li>
+<li>Increased business agility</li>
+</ul>
+</li>
+<li><strong>Innovation</strong><ul>
+<li>Reaching a global scale</li>
+<li>Customer experience improvements</li>
+<li>Transformation of products or services</li>
+<li>Market disruption</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="business-outcome">Business Outcome</h3>
+<ul>
+<li>Answer the question <strong>WHAT TO MEASURE?</strong></li>
+<li>Defined, concise and observable outcome captured by a specific measure, for example<ul>
+<li>Increase in revenue</li>
+<li>Increase in profit</li>
+<li>Cost reduction</li>
+<li>Global access to customers</li>
+<li>Reaching new markets</li>
+</ul>
+</li>
+</ul>
+<h3 id="business-justification">Business Justification</h3>
+<ul>
+<li>Answer the question <strong>WHAT’S MY RETURN ON INVESTMENT?</strong></li>
+<li>Develop a business case to validate the financial model that supports your motivations and outcomes</li>
+<li>Tools that support this process are<ul>
+<li>Azure TCO (Total Cost of Ownership) calculator - estimate current on-prem costs</li>
+<li>Azure Pricing Calculator - estimate future Azure costs</li>
+<li>Azure Cost Management - see current Azure costs</li>
+</ul>
+</li>
+</ul>
+<h3 id="first-project">First Project</h3>
+<ul>
+<li>Choose the first project to validate your strategy (Proof of concept - POC) based on<ul>
+<li>Business Criteria<ul>
+<li>Currently operating</li>
+<li>Dedicated owner</li>
+<li>Strong motivation to move</li>
+</ul>
+</li>
+<li>Technical Criteria<ul>
+<li>Minimum dependencies and assets</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="plan">Plan</h2>
+<ol>
+<li>Digital Estate (INVENTORY OF ASSETS)<ul>
+<li>Review current landscape and list all projects/solutions (digital assets)</li>
+<li>Choose one of the five (5) R’s of rationalization<ul>
+<li>Rehost - move as is; typically into containers or IaaS (virtual machines)</li>
+<li>Refactor - make small code changes and move to PaaS (ex. Azure SQL, Azure App Service, etc.)</li>
+<li>Rearchitect - make complex code changes to introduce new features or fix incompatible apps</li>
+<li>Rebuild - create a new application using cloud-first design</li>
+<li>Replace - review available SaaS solutions and replace legacy or unneeded applications</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Initial Organization Alignment<ul>
+<li>Align people so they will support your adoption plan</li>
+<li>Map people to capabilities</li>
+</ul>
+</li>
+<li>Skills Readiness Plan<ul>
+<li>Review current skills and address the gaps</li>
+</ul>
+</li>
+<li>Cloud Adoption Plan - combine everything from steps 1 to 3 into a single cloud adoption plan</li>
+</ol>
+<h2 id="ready">Ready</h2>
+<ol>
+<li>Azure Setup Guide - Review the Azure setup guide to become familiar with the tools and approaches you need to use to create a landing zone.</li>
+<li>Azure Landing Zone - Choose an appropriate Azure Subscription type that best suits your needs and establish an initial Azure environment.</li>
+<li>Extend Landing Zone - Expand the initial landing zone to fit your business needs.</li>
+<li>Best Practices - Review everything and ensure best practices are followed.</li>
+</ol>
+<h2 id="adopt">Adopt</h2>
+<h2 id="migrate">Migrate</h2>
+<ol>
+<li>First Migration - migrate your first application to familiarize yourself with the cloud, guidelines, and tools</li>
+<li>Migration Scenarios - review and prepare migration scenarios/guidelines for your company<ul>
+<li>Virtual Machines - Linux, Windows, etc.</li>
+<li>Apps - Java, .NET, NodeJS web apps, etc.</li>
+<li>Data - SQL Server, PostgreSQL, File Servers, etc.</li>
+<li>Other - VMware, Azure Stack, etc.</li>
+</ul>
+</li>
+<li>Best Practices - address common migration needs through the application of consistent best practices.</li>
+<li>Process Improvements - an important part of this process heavy activity is to identify bottlenecks and improve with every migration</li>
+</ol>
+<h2 id="innovate">Innovate</h2>
+<ol>
+<li>Business Value Consensus (VALUE TO STRATEGY)<ol>
+<li>Create hypothetical customer need</li>
+<li>Decide on a solution that solves it</li>
+<li>Map this to your strategy</li>
+</ol>
+</li>
+<li>Innovation Guide (TOOLS) - choose available Azure tools that will help your build this application</li>
+<li>Best Practices - verify that best practices are followed for all tools in the toolchain</li>
+<li>Process Improvements - gather feedback from the users and the customers to improve architectural decisions and future products</li>
+</ol>
+<h2 id="govern-manage">Govern &amp; Manage</h2>
+<ol>
+<li>Define governance solutions - Choose solutions to maintain compliance, security and ensure total control of the environment.<ul>
+<li>Those solutions should focus to<ul>
+<li>Address Business Needs</li>
+<li>Provide Agility</li>
+<li>Control Risks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Manage cloud environment (CLOUD OPERATIONS) - Hand over solutions and environment to cloud operations team for maintenance. The team should ensure that stability and costs are always in perfect balance to meet business commitments. The team should allow the environment to grow, evolve, and adapt to changing business needs.</li>
+</ol>
+<h2 id="organize">Organize</h2>
+<p>Ensure that everyone knows what to do and when to do it for every stage in this process. One of the ways to achieve this is via RACI (Responsible, Accountable, Consulted, and Informed) matrix.</p>
+<table>
+<thead>
+<tr>
+<th>Document/Website</th>
+<th>Info</th>
+<th>Offers</th>
+<th>Audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Privacy Statement</td>
+<td>Collection, Purpose and Usage of Personal Data</td>
+<td>All Microsoft offers including services, applications, websites, software, servers, devices</td>
+<td>Everyone - end customers or companies</td>
+</tr>
+<tr>
+<td>Online Services Terms (OST)</td>
+<td>Licensing Terms (legal agreement) - usage rights about Azure services. What can be done and what is forbidden.</td>
+<td>Microsoft Online Services like Azure, Microsoft 365 services, Bing Maps, etc.</td>
+<td>Organizations - legal teams</td>
+</tr>
+<tr>
+<td>Data Protection Addendum</td>
+<td>Appending to OST describing obligations by both parties (Microsoft and you) with regards to the processing of customer and personal data</td>
+<td>Microsoft Online Services like Azure, Microsoft 365 services, Bing Maps, etc.</td>
+<td>Organizations - legal teams, security teams</td>
+</tr>
+<tr>
+<td>Trust Center</td>
+<td>One stop shop web portal for everything related to security, compliance, privacy, policies, best practices, etc.</td>
+<td>Microsoft Online Services like Azure, Microsoft 365 services, Bing Maps, etc.</td>
+<td>Organizations - legal teams, security teams, business managers, administrators</td>
+</tr>
+<tr>
+<td>Azure Compliance Documentation</td>
+<td>Web portal focusing on compliance offerings in Azure, simmilar to the trust center but narrowed down</td>
+<td>Azure</td>
+<td>Organizations - legal teams, security teams, business managers, Azure administrators</td>
+</tr>
+</tbody>
+</table>
+<h2 id="azure-sovereign-regions">Azure Sovereign Regions</h2>
+<p>Azure Sovereign Regions provide Azure services in markets with very strict regulatory requirements</p>
+<ul>
+<li>Azure Government designed for the US government<ul>
+<li>A separate instance of Azure (lifecycle, services, portal, etc.)</li>
+<li>Physically isolated from other Azure regions</li>
+<li>Only authorized scanned personnel can get access</li>
+</ul>
+</li>
+<li>Azure China was designed for the Chinese market<ul>
+<li>A separate instance of Azure (lifecycle, services, portal, etc.)</li>
+<li>Physically isolated from other Azure regions</li>
+<li>Operated by a Chinese telecom company called 21Vianet</li>
+</ul>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../azure-core-services/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Azure Core Services" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Azure Core Services
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../cost-management-and-sla/" class="md-footer__link md-footer__link--next" aria-label="Next: Cost Management and SLA" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Cost Management and SLA
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Harsh Cloud
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Github" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://twitter.com/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Twitter" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://linkedin.com/in/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Linkedin" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://facebook.com/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Facebook" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://instagram.com/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Instagram" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+    
+  </body>
+</html>

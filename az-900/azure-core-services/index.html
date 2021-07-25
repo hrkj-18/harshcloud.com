@@ -1,0 +1,2046 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Harsh Cloud">
+      
+      
+      
+        <meta name="author" content="Harsh Jain">
+      
+      
+        <link rel="canonical" href="https://harshcloud.com/az-900/azure-core-services/">
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
+    
+    
+      
+        <title>Azure Core Services - Harsh Cloud</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1fe995fd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-center" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Harsh Cloud" class="md-header__button md-logo" aria-label="Harsh Cloud" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Harsh Cloud
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Azure Core Services
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/hrkj-18/harshcloud.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hrkj-18/harshcloud.com
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../aws/" class="md-tabs__link">
+        AWS
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cloud-computing/" class="md-tabs__link md-tabs__link--active">
+        AZ-900
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Harsh Cloud" class="md-nav__button md-logo" aria-label="Harsh Cloud" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Harsh Cloud
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/hrkj-18/harshcloud.com" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hrkj-18/harshcloud.com
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        AWS
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="AWS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          AWS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aws/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        AZ-900
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="AZ-900" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          AZ-900
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloud-computing/" class="md-nav__link">
+        Cloud Computing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Azure Core Services
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Azure Core Services
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-center" class="md-nav__link">
+    Data Center
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#region" class="md-nav__link">
+    Region
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#availability-zone" class="md-nav__link">
+    Availability Zone
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#region-pair" class="md-nav__link">
+    Region Pair
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geographies" class="md-nav__link">
+    Geographies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-resource" class="md-nav__link">
+    Azure Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-groups" class="md-nav__link">
+    Resource Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-manager" class="md-nav__link">
+    Resource Manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-info" class="md-nav__link">
+    Additional Info
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualization" class="md-nav__link">
+    Virtualization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-machines" class="md-nav__link">
+    Virtual Machines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-machine-scale-sets" class="md-nav__link">
+    Virtual Machine Scale Sets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containers" class="md-nav__link">
+    Containers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-container-instances" class="md-nav__link">
+    Azure Container Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-kubernetes-service-aks" class="md-nav__link">
+    Azure Kubernetes Service (AKS)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#app-service" class="md-nav__link">
+    App Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-functions-function-apps" class="md-nav__link">
+    Azure Functions (Function Apps)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-networking" class="md-nav__link">
+    Azure Networking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-virtual-network" class="md-nav__link">
+    Azure Virtual Network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-load-balancer" class="md-nav__link">
+    Azure Load Balancer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-gateway" class="md-nav__link">
+    VPN Gateway
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-gateway" class="md-nav__link">
+    Application Gateway
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-delivery-network" class="md-nav__link">
+    Content Delivery Network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    Data Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-account" class="md-nav__link">
+    Storage Account
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blob-storage" class="md-nav__link">
+    Blob Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queue-storage" class="md-nav__link">
+    Queue Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-storage" class="md-nav__link">
+    Table Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-storage" class="md-nav__link">
+    File Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disk-storage" class="md-nav__link">
+    Disk Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types_1" class="md-nav__link">
+    Data Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosmos-db" class="md-nav__link">
+    Cosmos DB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-database" class="md-nav__link">
+    SQL Database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-sql-product-family" class="md-nav__link">
+    Azure SQL product family
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-marketplace" class="md-nav__link">
+    Azure Marketplace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internet-of-things" class="md-nav__link">
+    Internet of Things
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-iot-hub" class="md-nav__link">
+    Azure IoT Hub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-iot-central" class="md-nav__link">
+    Azure IoT Central
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-sphere" class="md-nav__link">
+    Azure Sphere
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#big-data" class="md-nav__link">
+    Big Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-vs-rule" class="md-nav__link">
+    The three V’s rule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-synapse-analytics" class="md-nav__link">
+    Azure Synapse Analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-hdinsight" class="md-nav__link">
+    Azure HDInsight
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-databricks" class="md-nav__link">
+    Azure Databricks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artificial-intelligence" class="md-nav__link">
+    Artificial Intelligence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning" class="md-nav__link">
+    Machine Learning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-machine-learning" class="md-nav__link">
+    Azure Machine Learning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serverless" class="md-nav__link">
+    Serverless
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-functions" class="md-nav__link">
+    Azure Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-logic-apps" class="md-nav__link">
+    Azure Logic Apps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-event-grid" class="md-nav__link">
+    Azure Event Grid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops" class="md-nav__link">
+    DevOps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-devops" class="md-nav__link">
+    Azure DevOps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-devtest-labs" class="md-nav__link">
+    Azure DevTest Labs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-portal" class="md-nav__link">
+    Azure Portal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-powershell" class="md-nav__link">
+    Azure PowerShell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-cli" class="md-nav__link">
+    Azure CLI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-cloud-shell" class="md-nav__link">
+    Azure Cloud Shell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-advisor" class="md-nav__link">
+    Azure Advisor
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-privacy-complaince-trust/" class="md-nav__link">
+        Security, Privacy, Compliance and Trust
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cost-management-and-sla/" class="md-nav__link">
+        Cost Management and SLA
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-center" class="md-nav__link">
+    Data Center
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#region" class="md-nav__link">
+    Region
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#availability-zone" class="md-nav__link">
+    Availability Zone
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#region-pair" class="md-nav__link">
+    Region Pair
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geographies" class="md-nav__link">
+    Geographies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-resource" class="md-nav__link">
+    Azure Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-groups" class="md-nav__link">
+    Resource Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-manager" class="md-nav__link">
+    Resource Manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-info" class="md-nav__link">
+    Additional Info
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualization" class="md-nav__link">
+    Virtualization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-machines" class="md-nav__link">
+    Virtual Machines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-machine-scale-sets" class="md-nav__link">
+    Virtual Machine Scale Sets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containers" class="md-nav__link">
+    Containers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-container-instances" class="md-nav__link">
+    Azure Container Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-kubernetes-service-aks" class="md-nav__link">
+    Azure Kubernetes Service (AKS)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#app-service" class="md-nav__link">
+    App Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-functions-function-apps" class="md-nav__link">
+    Azure Functions (Function Apps)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-networking" class="md-nav__link">
+    Azure Networking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-virtual-network" class="md-nav__link">
+    Azure Virtual Network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-load-balancer" class="md-nav__link">
+    Azure Load Balancer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-gateway" class="md-nav__link">
+    VPN Gateway
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-gateway" class="md-nav__link">
+    Application Gateway
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-delivery-network" class="md-nav__link">
+    Content Delivery Network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    Data Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-account" class="md-nav__link">
+    Storage Account
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blob-storage" class="md-nav__link">
+    Blob Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queue-storage" class="md-nav__link">
+    Queue Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-storage" class="md-nav__link">
+    Table Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-storage" class="md-nav__link">
+    File Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disk-storage" class="md-nav__link">
+    Disk Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types_1" class="md-nav__link">
+    Data Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosmos-db" class="md-nav__link">
+    Cosmos DB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-database" class="md-nav__link">
+    SQL Database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-sql-product-family" class="md-nav__link">
+    Azure SQL product family
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-marketplace" class="md-nav__link">
+    Azure Marketplace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internet-of-things" class="md-nav__link">
+    Internet of Things
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-iot-hub" class="md-nav__link">
+    Azure IoT Hub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-iot-central" class="md-nav__link">
+    Azure IoT Central
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-sphere" class="md-nav__link">
+    Azure Sphere
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#big-data" class="md-nav__link">
+    Big Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-vs-rule" class="md-nav__link">
+    The three V’s rule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-synapse-analytics" class="md-nav__link">
+    Azure Synapse Analytics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-hdinsight" class="md-nav__link">
+    Azure HDInsight
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-databricks" class="md-nav__link">
+    Azure Databricks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artificial-intelligence" class="md-nav__link">
+    Artificial Intelligence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning" class="md-nav__link">
+    Machine Learning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-machine-learning" class="md-nav__link">
+    Azure Machine Learning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serverless" class="md-nav__link">
+    Serverless
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-functions" class="md-nav__link">
+    Azure Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-logic-apps" class="md-nav__link">
+    Azure Logic Apps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-event-grid" class="md-nav__link">
+    Azure Event Grid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devops" class="md-nav__link">
+    DevOps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-devops" class="md-nav__link">
+    Azure DevOps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-devtest-labs" class="md-nav__link">
+    Azure DevTest Labs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-portal" class="md-nav__link">
+    Azure Portal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-powershell" class="md-nav__link">
+    Azure PowerShell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-cli" class="md-nav__link">
+    Azure CLI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-cloud-shell" class="md-nav__link">
+    Azure Cloud Shell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-advisor" class="md-nav__link">
+    Azure Advisor
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Azure Core Services</h1>
+                
+                <h2 id="data-center">Data Center</h2>
+<ul>
+<li><strong>Physical facility</strong></li>
+<li><strong>Hosting for</strong> a group of networked <strong>servers</strong></li>
+<li>Own <strong>power</strong>, <strong>cooling</strong> &amp; <strong>networking</strong> infrastructure</li>
+</ul>
+<h2 id="region">Region</h2>
+<ul>
+<li>The g<strong>eographical area</strong> on the planet</li>
+<li><strong>One but usually more data centers</strong> connected with a <strong>low-latency network</strong> (&lt;2 milliseconds)</li>
+<li><strong>Location</strong> for your services</li>
+<li>Some services are <strong>available only in certain regions</strong></li>
+<li>Some services are <strong>global services</strong>, as such are not assigned/deployed in a specific region</li>
+<li>Globally available with <strong>50+ regions</strong></li>
+<li>Special <strong>government regions</strong> (US DoD Central, US Gov Virginia, etc.)</li>
+<li>Special <strong>partnered regions</strong> (China East, China North)</li>
+</ul>
+<h2 id="availability-zone">Availability Zone</h2>
+<ul>
+<li><strong>Regional feature</strong></li>
+<li>Grouping of <strong>physically separate</strong> facilities</li>
+<li>Designed to <strong>protect from data center failures</strong></li>
+<li>If the zone goes down <strong>others continue working</strong></li>
+<li>Two service <strong>categories</strong><ul>
+<li><strong>Zonal</strong> services (Virtual Machines, Disks, etc.)</li>
+<li><strong>Zone-redundant</strong> services (SQL, Storage, etc.)</li>
+</ul>
+</li>
+<li><strong>Not</strong> <strong>all</strong> regions are <strong>supported</strong></li>
+<li>The s<strong>upported</strong> region has <strong>three or more zones</strong></li>
+<li>A <strong>zone</strong> is <strong>one or more data centers</strong></li>
+</ul>
+<h2 id="region-pair">Region Pair</h2>
+<ul>
+<li><strong>Each region</strong> is <strong>paired</strong> with another region making it a region pair</li>
+<li>Region <strong>pairs are static</strong> and cannot be chosen</li>
+<li>Each pair resides within the <strong>same geography</strong><ul>
+<li>The exception is Brazil South</li>
+</ul>
+</li>
+<li><strong>Physical isolation</strong> with at least 300 miles distance (when possible)</li>
+<li>Some services have <strong>platform-provided replication</strong></li>
+<li><strong>Planned updates</strong> across the pairs</li>
+<li><strong>Data residency</strong> maintained for disaster recovery</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Region Pair A</th>
+<th>Region Pair B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>East US</td>
+<td>West US</td>
+</tr>
+<tr>
+<td>UK West</td>
+<td>UK South</td>
+</tr>
+<tr>
+<td>North Europe (Ireland)</td>
+<td>West Europe (Netherlands)</td>
+</tr>
+<tr>
+<td>East Asia (Hong Kong)</td>
+<td>Southeast Asia (Singapore)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="geographies">Geographies</h2>
+<ul>
+<li><strong>Discrete market</strong></li>
+<li>Typically <strong>contains two or more regions</strong></li>
+<li>Ensures <strong>data residency</strong>, <strong>sovereignty</strong>, <strong>resiliency</strong>, and <strong>compliance</strong> requirements are met</li>
+<li><strong>Fault-tolerant</strong> to protect from region-wide failures</li>
+<li>Broken up into areas<ul>
+<li><strong>Americas</strong>,</li>
+<li><strong>Europe</strong>,</li>
+<li>The <strong>Asia Pacific</strong>,</li>
+<li>The <strong>Middle</strong> <strong>East</strong> and <strong>Africa</strong></li>
+</ul>
+</li>
+<li>Each <strong>region belongs only to one Geography</strong></li>
+</ul>
+<h2 id="azure-resource">Azure Resource</h2>
+<ul>
+<li>The object <strong>used to manage services</strong> in Azure</li>
+<li>Represents <strong>service lifecycle</strong></li>
+<li>Saved as <strong>JSON definition</strong></li>
+</ul>
+<h2 id="resource-groups">Resource Groups</h2>
+<ul>
+<li><strong>Grouping</strong> of resources</li>
+<li>Holds <strong>logically related</strong> resources</li>
+<li>Typically organizing by<ul>
+<li><strong>Type</strong></li>
+<li><strong>Lifecycle</strong> (app, environment)</li>
+<li><strong>Department</strong></li>
+<li><strong>Billing</strong>,</li>
+<li><strong>Location</strong> or</li>
+<li><strong>combination of those</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="resource-manager">Resource Manager</h2>
+<ul>
+<li><strong>Management Layer</strong> for all resources and resource groups</li>
+<li><strong>Unified</strong> language</li>
+<li><strong>Controls</strong> <strong>access</strong> and <strong>resources</strong></li>
+</ul>
+<h2 id="additional-info">Additional Info</h2>
+<ul>
+<li>Each <strong>resource must</strong> be in one, and <strong>only one resource group</strong></li>
+<li>Resource <strong>groups have their own location</strong> assigned</li>
+<li>Resources in the resource groups <strong>can reside in different locations</strong></li>
+<li>Resources <strong>can be moved</strong> between the resource groups</li>
+<li>Resource <strong>groups can’t be nested</strong></li>
+<li>Organize based on your organization needs but consider<ul>
+<li>Billing</li>
+<li>Security and access management</li>
+<li>Application Lifecycle</li>
+</ul>
+</li>
+</ul>
+<h2 id="virtualization">Virtualization</h2>
+<ul>
+<li>Emulation of physical machines</li>
+<li>Different virtual hardware configurations per machine/app</li>
+<li>Different operating systems per machine/app</li>
+<li>Total separation of environments<ul>
+<li>file systems,</li>
+<li>services,</li>
+<li>ports,</li>
+<li>middleware,</li>
+<li>configuration</li>
+</ul>
+</li>
+</ul>
+<h2 id="virtual-machines">Virtual Machines</h2>
+<ul>
+<li>Infrastructure as a Service (IaaS)</li>
+<li>Total control over the operating system and the software</li>
+<li>Supports marketplace and custom images</li>
+<li>Best suited for<ul>
+<li>Custom software requiring custom system configuration</li>
+<li>Lift-and-shift scenarios</li>
+</ul>
+</li>
+<li>Can run any application/scenario<ul>
+<li>web-apps &amp; web services,</li>
+<li>databases,</li>
+<li>desktop applications,</li>
+<li>jump boxes,</li>
+<li>gateways, etc.</li>
+</ul>
+</li>
+</ul>
+<h2 id="virtual-machine-scale-sets">Virtual Machine Scale Sets</h2>
+<ul>
+<li>Infrastructure as a Service (IaaS)</li>
+<li>Set of identical virtual machines</li>
+<li>Built-in auto-scaling features</li>
+<li>Designed for manual and auto-scaled workloads like web services,* batch processing, etc.</li>
+</ul>
+<h2 id="containers">Containers</h2>
+<ul>
+<li>Use host’s operating system</li>
+<li>Emulate operating system (VMs emulate hardware)</li>
+<li>Lightweight (no O/S)<ul>
+<li>Development Effort</li>
+<li>Maintenance</li>
+<li>Compute &amp; storage requirements</li>
+</ul>
+</li>
+<li>Respond quicker to demand changes</li>
+<li>Designed for almost any scenario</li>
+</ul>
+<h2 id="azure-container-instances">Azure Container Instances</h2>
+<ul>
+<li>The simplest and fastest way to run a container in Azure</li>
+<li>Platform as a Service</li>
+<li>Serverless Containers</li>
+<li>Designed for<ul>
+<li>Small and simple web apps/services</li>
+<li>Background jobs</li>
+<li>Scheduled scripts</li>
+</ul>
+</li>
+</ul>
+<h2 id="azure-kubernetes-service-aks">Azure Kubernetes Service (AKS)</h2>
+<ul>
+<li>The open-source container orchestration platform</li>
+<li>Platform as a Service</li>
+<li>Highly scalable and customizable</li>
+<li>Designed for high scale container deployments (anything really!)</li>
+</ul>
+<h2 id="app-service">App Service</h2>
+<ul>
+<li>Designed as enterprise-grade web application service</li>
+<li>Platform as a Service</li>
+<li>Supports multiple programming languages and containers</li>
+</ul>
+<h2 id="azure-functions-function-apps">Azure Functions (Function Apps)</h2>
+<ul>
+<li>Platform as a Service</li>
+<li>Serverless</li>
+<li>Two hosting/pricing models<ul>
+<li>Consumption-based plan</li>
+<li>Dedicated plan</li>
+</ul>
+</li>
+<li>Designed for micro/nano-services</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Virtual Machines (IaaS) - Custom software, custom requirements, very specialized, high degree of control</li>
+<li>VM Scale Sets (IaaS) - Auto-scaled workloads for VMs</li>
+<li>Container Instances (PaaS) - Simple container hosting, easy to start</li>
+<li>Kubernetes Service (PaaS) - Highly scalable and customizable * container hosting platform</li>
+<li>App Services (PaaS) - Web applications, a lot of enterprise web * hosting features, easy to start</li>
+<li>Functions (PaaS) (Function as a Service) (Serverless) - micro/nano-services, excellent consumption-based pricing, easy to start</li>
+</ul>
+<h2 id="azure-networking">Azure Networking</h2>
+<ul>
+<li>Connect cloud and on-premises</li>
+<li>On-premise networking functionality</li>
+</ul>
+<h2 id="azure-virtual-network">Azure Virtual Network</h2>
+<ul>
+<li>Logically isolated networking components</li>
+<li>Segmented into one or more subnets</li>
+<li>Subnets are discrete sections</li>
+<li>Enable communication of resources with each other, internet and on-premises</li>
+<li>Scoped to a single region</li>
+<li>VNet peering allows cross-region communication</li>
+<li>Isolation, Segmentation, Communication, Filtering, Routing</li>
+</ul>
+<h2 id="azure-load-balancer">Azure Load Balancer</h2>
+<ul>
+<li>Even traffic distribution</li>
+<li>Supports both inbound and outbound scenarios</li>
+<li>High-availability scenarios</li>
+<li>Both TCP (transmission control protocol) and UDP (user datagram protocol) applications</li>
+<li>Internal and External traffic</li>
+<li>Port Forwarding</li>
+<li>High scale with up to millions of flows</li>
+</ul>
+<h2 id="vpn-gateway">VPN Gateway</h2>
+<ul>
+<li>The specific type of virtual network gateway for on-premises to azure traffic over the public internet</li>
+</ul>
+<h2 id="application-gateway">Application Gateway</h2>
+<ul>
+<li>Web traffic load balancer</li>
+<li>Web application firewall</li>
+<li>Redirection</li>
+<li>Session affinity</li>
+<li>URL Routing</li>
+<li>SSL termination</li>
+</ul>
+<h2 id="content-delivery-network">Content Delivery Network</h2>
+<ul>
+<li>Define content</li>
+<li>Minimize latency</li>
+<li>POP (points of presence) with many locations</li>
+</ul>
+<h2 id="data-types">Data Types</h2>
+<ul>
+<li>Structured - Data that can be represented using tables with very strict schema. Each row must follow a defined schema. Some tables have defined relationships between them. Typically used in relational databases.</li>
+<li>Semi-structured - Data that can be represented using tables but without a strictly defined schema. Rows must only have a unique key identifier.</li>
+<li>Unstructured - Any files in any format. Like binary files, application files, images, movies, etc.</li>
+</ul>
+<h2 id="storage-account">Storage Account</h2>
+<ul>
+<li>Group of services which include<ul>
+<li>blob storage,</li>
+<li>queue storage,</li>
+<li>table storage, and</li>
+<li>file storage</li>
+</ul>
+</li>
+<li>Used to store<ul>
+<li>files,</li>
+<li>messages, and</li>
+<li>semi-structured data</li>
+</ul>
+</li>
+<li>Highly scalable (up to petabytes of data)</li>
+<li>Highly durable (99.999999999% - 11 nines, up to 16 nines)</li>
+<li>Cheapest per GB storage</li>
+</ul>
+<h2 id="blob-storage">Blob Storage</h2>
+<ul>
+<li>BLOB – binary large object – file</li>
+<li>Designed for storage of files of any kind</li>
+<li>Three storage tiers<ul>
+<li>Hot – frequently accessed data</li>
+<li>Cool – infrequently accessed data (lower availability, high durability)</li>
+<li>Archive – rarely (if ever) accessed data</li>
+</ul>
+</li>
+</ul>
+<h2 id="queue-storage">Queue Storage</h2>
+<ul>
+<li>Storage for small pieces of data (messages)</li>
+<li>Designed for scalable asynchronous processing</li>
+</ul>
+<h2 id="table-storage">Table Storage</h2>
+<ul>
+<li>Storage for semi-structured data (NoSQL)<ul>
+<li>No need for foreign joins, foreign keys, relationships, or strict schema</li>
+<li>Designed for fast access</li>
+</ul>
+</li>
+<li>Many programming interfaces and SDKs</li>
+</ul>
+<h2 id="file-storage">File Storage</h2>
+<ul>
+<li>Storage for files accessed via shared drive protocols</li>
+<li>Designed to extend on-premise file shares or implement lift-and-shift scenarios</li>
+</ul>
+<h2 id="disk-storage">Disk Storage</h2>
+<ul>
+<li>Disk emulation in the cloud</li>
+<li>Persistent storage for Virtual Machines</li>
+<li>Different<ul>
+<li>sizes,</li>
+<li>types (SSD, HDD)</li>
+<li>performance tiers</li>
+</ul>
+</li>
+<li>The disk can be unmanaged or managed</li>
+</ul>
+<h2 id="data-types_1">Data Types</h2>
+<ul>
+<li><strong>Structured</strong> - Data that can be represented using tables with very strict schema. Each row must follow a defined schema. Some tables have defined relationships between them. Typically used in relational databases.</li>
+<li><strong>Semi-structured</strong> - Data that can be represented using tables but without a strictly defined schema. Rows must only have a unique key identifier.</li>
+<li><strong>Unstructured</strong> - Any files in any format. Like binary files, application files, images, movies, etc.</li>
+</ul>
+<h2 id="cosmos-db">Cosmos DB</h2>
+<ul>
+<li>Globally distributed NoSQL (semi-structured data) Database service</li>
+<li>Schema-less</li>
+<li>Multiple APIs (SQL, MongoDB, Cassandra, Gremlin, Table Storage)</li>
+<li>Designed for<ul>
+<li>Highly responsive (real-time) applications with super-low latency responses &lt;10ms</li>
+<li>Multi-regional applications</li>
+</ul>
+</li>
+</ul>
+<h2 id="sql-database">SQL Database</h2>
+<ul>
+<li><strong>Relational database</strong> service in the cloud (PaaS) (DBaaS - Database as a Service)</li>
+<li><strong>Structured data service</strong> defined using schema and relationships</li>
+<li><strong>Rich Query Capabilitie</strong>s (SQL)</li>
+<li><strong>High-performance</strong>, reliable, fully managed, and secure database for building - applications</li>
+</ul>
+<h2 id="azure-sql-product-family">Azure SQL product family</h2>
+<ul>
+<li>Azure <strong>SQL Database</strong> – Reliable relational database based on SQL Server</li>
+<li>Azure <strong>Database for MySQL</strong> – Azure SQL version for MySQL database engine</li>
+<li>Azure <strong>Database for PostgreSQL</strong> – Azure SQL version for PostgreSQL database engine</li>
+<li>Azure <strong>SQL Managed Instance</strong> – Fully-fledged SQL Server managed by the cloud provider</li>
+<li>Azure <strong>SQL on VM</strong> – Fully-fledged SQL Server on IaaS</li>
+<li>Azure <strong>SQL DW (Synapse)</strong> – Massively Parallel Processing (MPP) version of SQL Server</li>
+</ul>
+<h2 id="azure-marketplace">Azure Marketplace</h2>
+<ul>
+<li>Think of it like an “Azure Shop” where you purchase services and solutions for the Azure platform</li>
+<li>Each product is a template that contains one or multiple services</li>
+<li>Products are delivered by first and third-party vendors</li>
+<li>Solutions can leverage all service categories like IaaS, PaaS, and SaaS</li>
+</ul>
+<h2 id="internet-of-things">Internet of Things</h2>
+<p>Internet of Things (<strong>IoT</strong>) is a network of internet-connected devices (<strong>IoT Devices</strong>) embedded in everyday objects enabling sending and receiving data such as <strong>settings</strong> and <strong>telemetry</strong>.</p>
+<h2 id="azure-iot-hub">Azure IoT Hub</h2>
+<ul>
+<li>Managed service for bi-directional communication</li>
+<li>Platform as a Service (PaaS)</li>
+<li>Highly secure, scalable, and reliable</li>
+<li>Integrates with a lot of Azure Services</li>
+<li>Programmable SDKs for popular languages (C, C##, Java, Python, Node.js)</li>
+<li>Multiple protocols (HTTPS, AMQP, MQTT)</li>
+</ul>
+<h2 id="azure-iot-central">Azure IoT Central</h2>
+<ul>
+<li>IoT App Platform - Software as a Service (SaaS)</li>
+<li>Industry-specific app templates</li>
+<li>No deep technical knowledge required</li>
+<li>Service for connecting, management, and monitoring IoT devices</li>
+<li>Highly secure, scalable, and reliable</li>
+<li>Built on top of the IoT Hub service and 30+ other services</li>
+</ul>
+<h2 id="azure-sphere">Azure Sphere</h2>
+<ul>
+<li>Secure end-2-end IoT Solutions<ul>
+<li>Azure Sphere certified chips (microcontroller units - MCUs)</li>
+<li>Azure Sphere OS based on Linux</li>
+<li>Azure Security Service trusted device-to-cloud communication</li>
+</ul>
+</li>
+</ul>
+<h2 id="big-data">Big Data</h2>
+<p><strong>Big Data</strong> is a field of technology that helps with the <strong>extraction</strong>, <strong>processing</strong> and <strong>analysis</strong> of information that is <strong>too large or complex</strong> to be dealt with by traditional software.</p>
+<h2 id="the-three-vs-rule">The three V’s rule</h2>
+<p>Big data typically has one of the following characteristics</p>
+<ul>
+<li><strong>Velocity</strong> - how fast the data is coming in or how fast we are processing it<ul>
+<li>Batch</li>
+<li>Periodic</li>
+<li>Near Real-Time</li>
+<li>Real-Time</li>
+</ul>
+</li>
+<li><strong>Volume</strong> - how much data we are processing<ul>
+<li>Megabytes</li>
+<li>Gigabyte</li>
+<li>Terabytes</li>
+<li>Petabytes</li>
+</ul>
+</li>
+<li><strong>Variety</strong> - how structured/complex the data is<ul>
+<li>Tables</li>
+<li>Databases</li>
+<li>Photo, Audio</li>
+<li>Video, Social Media</li>
+</ul>
+</li>
+</ul>
+<h2 id="azure-synapse-analytics">Azure Synapse Analytics</h2>
+<ul>
+<li>Big data analytics platform (PaaS)</li>
+<li>Multiple components<ul>
+<li>Spark</li>
+<li>Synapse SQL<ul>
+<li>SQL pools (dedicated – pay for provisioned performance)</li>
+<li>SQL on-demand (ad-hoc – pay for TB processed)</li>
+</ul>
+</li>
+<li>Synapse Pipelines (Data Factory – ETL)</li>
+<li>Studio (unified experience)</li>
+</ul>
+</li>
+</ul>
+<h2 id="azure-hdinsight">Azure HDInsight</h2>
+<ul>
+<li>Flexible multi-purpose big data platform (PaaS)</li>
+<li>Multiple technologies supported (Hadoop, Spark, Kafka, HBase, Hive, Storm, Machine Learning)</li>
+</ul>
+<h2 id="azure-databricks">Azure Databricks</h2>
+<ul>
+<li>Big data collaboration platform (PaaS)</li>
+<li>Unified workspace for notebook, cluster, data, access management, and collaboration</li>
+<li>Based on Apache Spark</li>
+<li>Integrates very well with common Azure data services</li>
+</ul>
+<h2 id="artificial-intelligence">Artificial Intelligence</h2>
+<p><strong>Artificial Intelligence</strong> (<strong>AI</strong>) is the simulation of human intelligence &amp; capabilities by computer software.</p>
+<h2 id="machine-learning">Machine Learning</h2>
+<p><strong>Machine Learning</strong> is a subcategory of AI where computer software is “<strong>taught</strong>” to <strong>draw conclusions</strong> and <strong>make predictions</strong> <strong>from data</strong>.</p>
+<h2 id="azure-machine-learning">Azure Machine Learning</h2>
+<ul>
+<li>Cloud-based platform for creating, managing, and publishing machine learning models</li>
+<li>Platform as a Service (PaaS)</li>
+<li>Machine Learning Workspace – top-level resource</li>
+<li>Machine Learning Studio – web portal for end-2-end development</li>
+<li>Features<ul>
+<li>Notebooks – using Python and R</li>
+<li>Automated ML – run multiple algorithms/parameters combinations, choose the best model</li>
+<li>Designer – graphical interface for no-code development</li>
+<li>Data &amp; Compute – management of storage and compute resources</li>
+<li>Pipelines – orchestrate model training, deployment, and management tasks</li>
+</ul>
+</li>
+</ul>
+<h2 id="serverless">Serverless</h2>
+<p><strong>Serverless computing</strong> is a cloud-hosted execution environment that allows customers to <strong>run their applications</strong> in the cloud while <strong>completely abstracting underlying infrastructure</strong>.</p>
+<h2 id="azure-functions">Azure Functions</h2>
+<ul>
+<li>Serverless coding platform (Functions as a Service, FaaS)</li>
+<li>Designed for nano-service architectures and event-based applications</li>
+<li>Scales up and down very quickly</li>
+<li>Highly scalable</li>
+<li>Supports popular languages and frameworks (.NET &amp; .NET Core, Java, Node.js, Python, PowerShell, etc.)</li>
+</ul>
+<h2 id="azure-logic-apps">Azure Logic Apps</h2>
+<ul>
+<li>Serverless enterprise integration service (PaaS)</li>
+<li>200+ connectors for popular services</li>
+<li>Designed for orchestration of<ul>
+<li>business processes,</li>
+<li>integration workflows for applications, data, systems, and services</li>
+</ul>
+</li>
+<li>No-code solution</li>
+</ul>
+<h2 id="azure-event-grid">Azure Event Grid</h2>
+<ul>
+<li>Fully managed serverless event routing service</li>
+<li>Uses publish-subscribe model</li>
+<li>Designed for event-based and near-real-time applications</li>
+<li>Supports dozen of built-in events from most common Azure services</li>
+</ul>
+<h2 id="devops">DevOps</h2>
+<p><strong>DevOps</strong> is a set of practices that combine both development (<strong>Dev</strong>) and operations (<strong>Ops</strong>).</p>
+<p>DevOps aims to <strong>shorten the development life cycle</strong> by providing <strong>continuous integration</strong> and <strong>delivery</strong> (CI/CD) capabilities while <strong>ensuring high quality</strong> of deliverables.</p>
+<h2 id="azure-devops">Azure DevOps</h2>
+<ul>
+<li><strong>Collection of services</strong> for building solutions using DevOps practices</li>
+<li>Services included<ul>
+<li><strong>Boards</strong> – tracking work</li>
+<li><strong>Pipelines</strong> – building CI/CD workflows (build, test and deploy apps)</li>
+<li><strong>Repos</strong> – code collaboration and versioning with Git</li>
+<li><strong>Test Plans</strong> – manual and exploratory testing</li>
+<li><strong>Artifacts</strong> – manage project deliverables</li>
+</ul>
+</li>
+<li>Extensible with <strong>Marketplace</strong> – over 1000 available apps</li>
+<li>Evolved from <strong>TFS</strong> (Team Foundation Server), through <strong>VSTS</strong> (Visual Studio Team Services)</li>
+</ul>
+<h2 id="azure-devtest-labs">Azure DevTest Labs</h2>
+<ul>
+<li>Service for creation of <strong>sandbox environments</strong> for developers/testers (PaaS)</li>
+<li>Quick setup of <strong>self-managed virtual machines</strong></li>
+<li><strong>Preconfigured templates</strong> for VMs</li>
+<li>Plenty of additional <strong>artifacts</strong> (tools, apps, custom actions)</li>
+<li>Lab <strong>policies</strong> (quotas, sizes, auto-shutdowns)</li>
+<li><strong>Share</strong> and <strong>automate</strong> labs via custom images</li>
+<li>Premade plugins/API/tools for <strong>CI/CD pipeline automation</strong></li>
+</ul>
+<h2 id="azure-portal">Azure Portal</h2>
+<ul>
+<li>Public web-based interface for management of Azure platform</li>
+<li>Designed for self-service</li>
+<li>Customizable</li>
+<li>Simple tasks</li>
+</ul>
+<h2 id="azure-powershell">Azure PowerShell</h2>
+<ul>
+<li>PowerShell and module</li>
+<li>Designed for automation</li>
+<li>Multi-platform with PowerShell Core</li>
+<li>Simple to use<ul>
+<li>Connect-AzAccount – log into Azure</li>
+<li>Get-AzResourceGroup – list resource groups</li>
+<li>New-AzResourceGroup – create a new resource group</li>
+<li>New-AzVm – create a virtual machine</li>
+</ul>
+</li>
+</ul>
+<h2 id="azure-cli">Azure CLI</h2>
+<ul>
+<li>Command Line Interface for Azure</li>
+<li>Designed for automation</li>
+<li>Multi-platform (Python)</li>
+<li>Simple to use<ul>
+<li>az login – log into Azure</li>
+<li>az group list – list resource groups</li>
+<li>az group create – create a new resource group</li>
+<li>az vm create – create a virtual machine</li>
+</ul>
+</li>
+<li>Native OS terminal scripting</li>
+</ul>
+<h2 id="azure-cloud-shell">Azure Cloud Shell</h2>
+<ul>
+<li>Cloud-based scripting environment</li>
+<li>Completely free</li>
+<li>Supports both Azure PowerShell and Azure CLI</li>
+<li>Dozen of additional tools</li>
+<li>Multiple client interfaces<ul>
+<li>Azure Portal integration (portal.azure.com)</li>
+<li>Shell Portal (shell.azure.com)</li>
+<li>Visual Studio Code Extension</li>
+<li>Windows Terminal</li>
+<li>Azure Mobile App</li>
+<li>Microsoft Docs integration</li>
+</ul>
+</li>
+</ul>
+<h2 id="azure-advisor">Azure Advisor</h2>
+<ul>
+<li><strong>Personalized consultant</strong> service</li>
+<li>Designed to provide <strong>recommendations</strong> and <strong>best practices</strong> for<ul>
+<li><strong>Cost</strong> (SKU sizes, idle services, reserved instances, etc.)</li>
+<li><strong>Security</strong> (MFA settings, vulnerability settings, agent installations, etc.)</li>
+<li><strong>Reliability</strong> (redundancy settings, soft delete on blobs, etc.)</li>
+<li><strong>Performance</strong> (SKU sizes, SDK versions, IO throttling, etc.)</li>
+<li><strong>Operational</strong> Excellence (service health, subscription limits, etc.)</li>
+</ul>
+</li>
+<li><strong>Actionable</strong> recommendations</li>
+<li><strong>Free</strong>!</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../cloud-computing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cloud Computing" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Cloud Computing
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../security-privacy-complaince-trust/" class="md-footer__link md-footer__link--next" aria-label="Next: Security, Privacy, Compliance and Trust" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Security, Privacy, Compliance and Trust
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Harsh Cloud
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Github" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://twitter.com/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Twitter" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://linkedin.com/in/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Linkedin" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://facebook.com/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Facebook" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://instagram.com/hrkj-18" target="_blank" rel="noopener" title="Harsh Jain on Instagram" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
+      
+    
+  </body>
+</html>
